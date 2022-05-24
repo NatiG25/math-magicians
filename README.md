@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## math-magicians
 
-## Available Scripts
+> Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
-In the project directory, you can run:
+ - Make simple calculations.
+ - Read a random math-related quote.
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- CSS
 
-### `npm test`
+- JavaScript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React JS
 
-### `npm run build`
+- Webpack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 
-### `npm run eject`
+- ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get a local copy up and running follow these simple example steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- copy this link git@github.com:NatiG25/Math-Magicians.git
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write git clone git@github.com:NatiG25/Math-Magicians.git
+- go to the repository folder in your command prompt cd math-magicians
+- use npm install to install the dependencies.
+- use npm start to start live server.
+## Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Have a working and updated browser
+- Have a local version control like git install on your computer
+- Have an account and sign in on GitHub, as online/remote version control system
+- Basic knowledge in JS and React JS
+### Setup
 
-## Learn More
+- Clone the git repo using this command: git clone git@github.com:NatiG25/Math-Magicians.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- npx hint . : To test html codes
+- npx stylelint "/*.{css,scss}"** : To test css code
+- npx eslint . : To test Eslint Report
 
-### Code Splitting
+### To test the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- npm install --save-dev jest
+- npm test
 
-### Analyzing the Bundle Size
+## Live Demo (Not available yet)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Live Demo Link](https://livedemo.com)
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@NatiG25](https://github.com/NatiG25)
+- Twitter: [@NatiG87702270](https://twitter.com/NatiG87702270)
+- LinkedIn: [@Temesgen](https://linkedin.com/in/temesgen-g-gorgis-0910a6229 )
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions, issues, and feature requests are welcome!
 
-### Deployment
+Feel free to check the issues page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Show your support
 
-### `npm run build` fails to minify
+Give a star if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+
+- Microverse linters
+- Coding partners
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
