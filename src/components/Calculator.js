@@ -9,7 +9,7 @@ class Calculator extends React.Component {
   render() {
     return (
       <div className="grid-container">
-        <div><span>0</span></div>
+        <div className="span-1">0</div>
         <button type="button">AC</button>
         <button type="button">+/-</button>
         <button type="button">%</button>
@@ -30,7 +30,7 @@ class Calculator extends React.Component {
         <button type="button">3</button>
         <button type="button" className="operator">+</button>
 
-        <button type="button" className="span2">0</button>
+        <button type="button" className="span-2">0</button>
         <button type="button">.</button>
         <button type="button" className="operator">=</button>
       </div>
