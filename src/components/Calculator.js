@@ -1,60 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    // 1
-    super(props);
-    this.state = {
-      total: '0',
-      next: null,
-      operation: null,
-    };
-    this.calculationHandler = this.calculationHandler.bind(this);
+const Calculator = () => {
+  const [obj, setObj] = useState({ total: 0, operation: null, next: null });
+
+  function calculationHandler(e) {
+    setObj(calculate(obj, e.target.textContent));
   }
 
-  calculationHandler(e) {
-    this.setState((state) => calculate(state, e.target.textContent));
-  }
-
-  render() {
-    const obj = this.state;
-    return (
-      <div className="grid-container">
-        <div className="span-1">
-          {obj.total}
-          {obj.operation}
-          {obj.next}
-        </div>
-
-        <button type="button" onClick={this.calculationHandler}>AC</button>
-        <button type="button" onClick={this.calculationHandler}>+/-</button>
-        <button type="button" onClick={this.calculationHandler}>%</button>
-        <button type="button" className="operator" onClick={this.calculationHandler}>÷</button>
-
-        <button type="button" onClick={this.calculationHandler}>7</button>
-        <button type="button" onClick={this.calculationHandler}>8</button>
-        <button type="button" onClick={this.calculationHandler}>9</button>
-        <button type="button" className="operator" onClick={this.calculationHandler}>x</button>
-
-        <button type="button" onClick={this.calculationHandler}>4</button>
-        <button type="button" onClick={this.calculationHandler}>5</button>
-        <button type="button" onClick={this.calculationHandler}>6</button>
-        <button type="button" className="operator" onClick={this.calculationHandler}>-</button>
-
-        <button type="button" onClick={this.calculationHandler}>1</button>
-        <button type="button" onClick={this.calculationHandler}>2</button>
-        <button type="button" onClick={this.calculationHandler}>3</button>
-        <button type="button" className="operator" onClick={this.calculationHandler}>+</button>
-
-        <button type="button" className="span-2" onClick={this.calculationHandler}>0</button>
-        <button type="button" onClick={this.calculationHandler}>.</button>
-        <button type="button" className="operator" onClick={this.calculationHandler}>=</button>
-
+  return (
+    <div className="grid-container">
+      <div className="span-1">
+        {obj.total}
+        {obj.operation}
+        {obj.next}
       </div>
 
-    );
-  }
-}
+      <button type="button" onClick={calculationHandler}>AC</button>
+      <button type="button" onClick={calculationHandler}>+/-</button>
+      <button type="button" onClick={calculationHandler}>%</button>
+      <button type="button" className="operator" onClick={calculationHandler}>÷</button>
+
+      <button type="button" onClick={calculationHandler}>7</button>
+      <button type="button" onClick={calculationHandler}>8</button>
+      <button type="button" onClick={calculationHandler}>9</button>
+      <button type="button" className="operator" onClick={calculationHandler}>x</button>
+
+      <button type="button" onClick={calculationHandler}>4</button>
+      <button type="button" onClick={calculationHandler}>5</button>
+      <button type="button" onClick={calculationHandler}>6</button>
+      <button type="button" className="operator" onClick={calculationHandler}>-</button>
+
+      <button type="button" onClick={calculationHandler}>1</button>
+      <button type="button" onClick={calculationHandler}>2</button>
+      <button type="button" onClick={calculationHandler}>3</button>
+      <button type="button" className="operator" onClick={calculationHandler}>+</button>
+
+      <button type="button" className="span-2" onClick={calculationHandler}>0</button>
+      <button type="button" onClick={calculationHandler}>.</button>
+      <button type="button" className="operator" onClick={calculationHandler}>=</button>
+
+    </div>
+  );
+};
 
 export default Calculator;
