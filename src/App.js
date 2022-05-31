@@ -23,7 +23,14 @@ function Home() {
   return (
     <>
       <main>
-        <h1>Math Magicians</h1>
+        <div className="header">
+          <h1>Math Magicians</h1>
+          <nav>
+            <Link to="/about">About</Link>
+            <Link to="/">Home</Link>
+            <Link to="/Calculator">Calculator</Link>
+          </nav>
+        </div>
         <h2>Welcome to our page!</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
@@ -37,9 +44,6 @@ function Home() {
           possimus perferendis laudantium quae quam.
         </p>
       </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
     </>
   );
 }
@@ -48,16 +52,19 @@ function About() {
   return (
     <>
       <main>
-        <h1>Math Magicians</h1>
-        <h2>Welcome to our page!</h2>
+        <div className="header">
+          <h1>Math Magicians</h1>
+          <nav>
+            <Link to="/about">About</Link>
+            <Link to="/">Home</Link>
+            <Link to="/Calculator">Calculator</Link>
+          </nav>
+        </div>
         <p>
           Mathematics is not about numbers, equations, computations, or
           algorithms: it is about understanding --Willam Paul Thurston
         </p>
       </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
     </>
   );
 }
