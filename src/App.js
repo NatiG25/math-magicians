@@ -26,7 +26,7 @@ function Home() {
         <div className="header">
           <h1>Math Magicians</h1>
           <nav>
-            <Link to="/about">About</Link>
+            <Link to="/about">Quote</Link>
             <Link to="/">Home</Link>
             <Link to="/Calculator">Calculator</Link>
           </nav>
@@ -55,12 +55,12 @@ function About() {
         <div className="header">
           <h1>Math Magicians</h1>
           <nav>
-            <Link to="/about">About</Link>
+            <Link to="/about">Quote</Link>
             <Link to="/">Home</Link>
             <Link to="/Calculator">Calculator</Link>
           </nav>
         </div>
-        <p>
+        <p className="quote">
           Mathematics is not about numbers, equations, computations, or
           algorithms: it is about understanding --Willam Paul Thurston
         </p>

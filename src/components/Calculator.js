@@ -14,7 +14,7 @@ const Calculator = () => {
       <header className="header">
         <h1>Math Magicians</h1>
         <nav>
-          <Link to="/about">About</Link>
+          <Link to="/about">Quote</Link>
           <Link to="/">Home</Link>
           <Link to="/Calculator">Calculator</Link>
         </nav>
