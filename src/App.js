@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import About from './components/About';
 import Home from './components/Home';
+import Header from './components/Header';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,11 +13,14 @@ class App extends React.Component {
 
   render() {
     return (
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/Calculator" element={<Calculator />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <>
+        <Header />
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/Calculator" element={<Calculator />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </>
     );
   }
 }

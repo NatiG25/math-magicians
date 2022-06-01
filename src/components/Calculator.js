@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -11,15 +10,6 @@ const Calculator = () => {
 
   return (
     <>
-      <header className="header">
-        <h1>Math Magicians</h1>
-        <nav>
-          <Link to="/about">Quote</Link>
-          <Link to="/">Home</Link>
-          <Link to="/Calculator">Calculator</Link>
-        </nav>
-      </header>
-
       <div className="flex-container">
         <h2>Let us do some maths!</h2>
         <div className="grid-container">
