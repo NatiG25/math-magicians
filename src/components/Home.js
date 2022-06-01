@@ -1,19 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Header from './Header';
 
 export default function Home() {
   return (
     <>
       <main>
-        <div className="header">
-          <h1>Math Magicians</h1>
-          <nav>
-            <Link to="/about">Quote</Link>
-            <Link to="/">Home</Link>
-            <Link to="/Calculator">Calculator</Link>
-          </nav>
-        </div>
-
+        <Header />
         <div className="home-content">
           <h2>Welcome to our page!</h2>
           <p>
