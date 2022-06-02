@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render react components renders correctly 1`] = `
+<div
+  className="flex-container"
+>
+  <h2>
+    Let us do some maths!
+  </h2>
+  <div
+    className="grid-container"
+  >
+    <div
+      className="span-1"
+    >
+      0
+    </div>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="operator"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="operator"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="operator"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="operator"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="span-2"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="operator"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
+
+exports[`render react components renders correctly 2`] = `
+<main>
+  <p
+    className="quote"
+  >
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding --Willam Paul Thurston
+  </p>
+</main>
+`;
+
+exports[`render react components renders correctly 3`] = `
+<main>
+  <div
+    className="home-content"
+  >
+    <h2>
+      Welcome to our page!
+    </h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laudantium maiores atque, iure quasi et illum odio est. Fugiat vitae possimus perferendis laudantium quae quam ipsum eligendi nam provident reiciendis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laudantium maiores atque, iure quasi et illum odio est. Fugiat vitae possimus perferendis laudantium quae quam.
+    </p>
+  </div>
+</main>
+`;
+
+exports[`render react components renders correctly 4`] = `
+<header
+  className="header"
+>
+  <h1>
+    Math Magicians
+  </h1>
+  <nav>
+    <a
+      href="/about"
+      onClick={[Function]}
+    >
+      Quote
+    </a>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/Calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+  </nav>
+</header>
+`;
+
+exports[`render react components renders correctly 5`] = `
+Array [
+  <header
+    className="header"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <nav>
+      <a
+        href="/about"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        href="/Calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </nav>
+  </header>,
+  <main>
+    <div
+      className="home-content"
+    >
+      <h2>
+        Welcome to our page!
+      </h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laudantium maiores atque, iure quasi et illum odio est. Fugiat vitae possimus perferendis laudantium quae quam ipsum eligendi nam provident reiciendis.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus laudantium maiores atque, iure quasi et illum odio est. Fugiat vitae possimus perferendis laudantium quae quam.
+      </p>
+    </div>
+  </main>,
+]
+`;
