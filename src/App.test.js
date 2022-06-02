@@ -1,12 +1,12 @@
-import renderer from "react-test-renderer";
-import operate from "./logic/operate";
-import Calculator from "./components/Calculator";
-import About from "./components/About";
-import Header from "./components/Header";
-import { BrowserRouter as Router } from "react-router-dom";
-import Home from "./components/Home";
-import App from "./App";
-import calculate from "./logic/calculate";
+import renderer from 'react-test-renderer';
+import operate from './logic/operate';
+import Calculator from './components/Calculator';
+import About from './components/About';
+import Header from './components/Header';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './components/Home';
+import App from './App';
+import calculate from './logic/calculate';
 
 describe("Operations", () => {
   test("add two numbers", () => {
