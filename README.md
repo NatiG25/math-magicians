@@ -61,7 +61,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-- [Math Magicians](https://math-magicians254254.netlify.app/)
+- [Live Demo Netlify link](https://math-magicians254254.netlify.app/)
 
 ## Author
 
