@@ -4,8 +4,8 @@
 
 > Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
- - Make simple calculations.
- - Read a random math-related quote.
+ > - Make simple calculations.
+ > - Read a random math-related quote.
 
 ## Built With
 
@@ -19,17 +19,17 @@
 
 - Webpack
 
-- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
+- Lighthouse
 
-- Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
+- Webhint
 
-- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
+- Stylelint
 
-- ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
+- ESlint
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps:
 
 - copy this link git@github.com:NatiG25/Math-Magicians.git
 - get the directory that you want to clone the repository.
@@ -38,6 +38,7 @@ To get a local copy up and running follow these simple example steps.
 - go to the repository folder in your command prompt cd math-magicians
 - use npm install to install the dependencies.
 - use npm start to start live server.
+
 ## Prerequisites
 
 - Have a working and updated browser
@@ -66,8 +67,8 @@ To get a local copy up and running follow these simple example steps.
 ## Author
 
 - GitHub: [@NatiG25](https://github.com/NatiG25)
-- Twitter: [@NatiG87702270](https://twitter.com/NatiG87702270)
-- LinkedIn: [@Temesgen](https://linkedin.com/in/temesgen-g-gorgis-0910a6229 )
+- Twitter: [@NatiG255](https://twitter.com/NatiG255)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/natigebregorgis/)
 
 ## Contributing
 
@@ -77,7 +78,7 @@ Feel free to check the issues page.
 
 ## Show your support
 
-Give a star if you like this project!
+Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
