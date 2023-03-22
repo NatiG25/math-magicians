@@ -64,13 +64,13 @@ To get a local copy up and running follow these simple example steps:
 
 ## Live Demo
 
-- [Live Demo Netlify link](https://math-magicians254254.netlify.app/)
+- [Live Demo Netlify link](https://math-magicians25.netlify.app/)
 
 ## Author
 
 - GitHub: [@NatiG25](https://github.com/NatiG25)
 - Twitter: [@NatiG255](https://twitter.com/NatiG255)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/natigebregorgis/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/natigorgis/)
 
 ## Contributing
 
