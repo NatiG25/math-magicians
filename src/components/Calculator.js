@@ -20,14 +20,14 @@ const Calculator = () => {
           </div>
 
           <button
-            className="calculator-btn"
+            className="calculator-btn grey-btn"
             type="button"
             onClick={calculationHandler}
           >
             AC
           </button>
           <button
-            className="calculator-btn"
+            className="calculator-btn grey-btn"
             type="button"
             onClick={calculationHandler}
           >
@@ -151,7 +151,7 @@ const Calculator = () => {
           </button>
           <button
             type="button"
-            className="operator"
+            className="operator equal-btn"
             onClick={calculationHandler}
           >
             =
