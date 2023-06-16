@@ -2,7 +2,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import operate from './logic/operate';
 import Calculator from './components/Calculator';
-import About from './components/About';
+import Quote from './components/Quote';
 import Header from './components/Header';
 import Home from './components/Home';
 import App from './App';
@@ -33,7 +33,7 @@ describe('render react components', () => {
   });
 
   it('renders correctly', () => {
-    const tree = renderer.create(<About />).toJSON();
+    const tree = renderer.create(<Quote />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
