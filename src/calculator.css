@@ -18,6 +18,28 @@
   margin: 0;
 }
 
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--body-font);
@@ -31,10 +53,15 @@ body {
   background-size: 15%, 30%, 30%, 15%;
   background-position: top left, center 30%, center 89%, bottom right;
   height: 100vh;
+  animation: transitionIn 0.75s;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .header {
@@ -45,6 +72,7 @@ a {
   align-items: center;
   background-color: #16181b;
   color: var(--first-color);
+  animation: 1s ease-out slideInLeft;
 }
 
 nav > a {
@@ -61,6 +89,34 @@ nav > a {
   padding: 1.5rem;
   border-radius: 2rem;
   text-align: center;
+}
+
+/* =================== QUOTES ================== */
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  transition: var(--transition);
+  max-width: 1500px;
+}
+
+.quote-item {
+  width: 16rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.quote-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 /* =================== BUTTONS ================== */
