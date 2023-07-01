@@ -22,13 +22,14 @@ body {
   margin: 0;
   font-family: var(--body-font);
   background-color: var(--first-color-second);
-  background-image: url("../public/images/Ellipse\ 1.svg"),
+  background-image:
+    url("../public/images/Ellipse\ 1.svg"),
     url("../public/images/Ellipse\ 3.svg"),
     url("../public/images/Ellipse\ 2.svg"),
     url("../public/images/Ellipse\ 4.svg");
   background-repeat: no-repeat;
   background-size: 15%, 30%, 30%, 15%;
-  background-position: top left, center 30%, center 75%, bottom right;
+  background-position: top left, center 30%, center 89%, bottom right;
   height: 100vh;
 }
 
@@ -58,7 +59,7 @@ nav > a {
   gap: 1rem;
   background-color: var(--second-color);
   padding: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   text-align: center;
 }
 
