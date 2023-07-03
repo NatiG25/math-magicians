@@ -45,15 +45,16 @@ body {
   font-family: var(--body-font);
   background-color: var(--first-color-second);
   background-image:
-    url("../public/images/Ellipse\ 1.svg"),
-    url("../public/images/Ellipse\ 3.svg"),
-    url("../public/images/Ellipse\ 2.svg"),
-    url("../public/images/Ellipse\ 4.svg");
+    url("./images/Ellipse\ 1.svg"),
+    url("./images/Ellipse\ 3.svg"),
+    url("./images/Ellipse\ 2.svg"),
+    url("./images/Ellipse\ 4.svg");
   background-repeat: no-repeat;
   background-size: 15%, 30%, 30%, 15%;
   background-position: top left, center 30%, center 89%, bottom right;
   height: 100vh;
-  animation: transitionIn 0.75s;
+  animation: transitionIn 1s;
+  position: relative;
 }
 
 a {
@@ -70,7 +71,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #16181b;
+  background-color: var(--second-color);
   color: var(--first-color);
   animation: 1s ease-out slideInLeft;
 }
@@ -106,8 +107,21 @@ nav > a {
 
 .quote-item {
   width: 16rem;
-  border: 1px solid black;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  padding: 1rem;
+}
+
+.quote-title {
+  color: var(--first-color-second);
+  font-size: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.quote-description {
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .quote-img {
@@ -118,6 +132,51 @@ nav > a {
   margin-bottom: 20px;
   border-radius: 50%;
 }
+
+/* =================== SWIPER ================== */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* .swiper {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+} */
+
+/* .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+} */
+
+/* .slider-controller {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+/* .slider-controller .swiper-btn-next {
+  left: 58%;
+  transform: translateX(-58%);
+} */
 
 /* =================== BUTTONS ================== */
 .calculator-btn,
