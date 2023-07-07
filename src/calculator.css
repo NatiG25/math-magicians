@@ -10,6 +10,31 @@
 
   /* ============= HOVER EFFECTS =============== */
   --transition: 0.5s ease-in-out;
+
+  /* ============= FONT =============== */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* ========== Font weight ========== */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* ========== Margins ========== */
+
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --ma-0-25: 0.25rem;
+  --ma-0-5: 0.5rem;
+  --ma-0-75: 0.75rem;
+  --ma-1: 1rem;
+  --ma-1-5: 1.5rem;
+  --ma-2: 2rem;
+  --ma-2-5: 2.5rem;
+  --ma-3: 3rem;
 }
 
 * {
@@ -40,6 +65,23 @@
   }
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.25);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--body-font);
@@ -54,7 +96,6 @@ body {
   background-position: top left, center 30%, center 89%, bottom right;
   height: 100vh;
   animation: transitionIn 1s;
-  position: relative;
 }
 
 a {
@@ -80,6 +121,7 @@ nav > a {
   padding: 20px;
   color: var(--first-color);
   font-weight: bold;
+  font-size: var(--h3-font-size);
 }
 
 .grid-container {
@@ -94,27 +136,39 @@ nav > a {
 
 /* =================== QUOTES ================== */
 
-.quote-container {
+.quote-item {
+  color: var(--first-color);
+  padding: 1rem 3rem;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: 10rem;
-  flex-wrap: wrap;
-  padding: 2rem;
-  transition: var(--transition);
-  max-width: 1500px;
+  justify-content: space-evenly;
 }
 
-.quote-item {
-  width: 16rem;
-  border-radius: 0.75rem;
+.quote-content {
   background-color: var(--second-color);
-  color: var(--first-color);
-  padding: 1rem;
+  padding: 1rem 30px;
+  width: 50%;
+  animation: pulse 0.5s ease-in-out 1;
+  transition: var(--transition);
+}
+
+.quote-content:hover {
+  background-color: #fff;
+  transform: scale(1.25);
+}
+
+.author {
+  display: flex;
+  justify-content: flex-end;
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+.author span:first-child {
+  margin: -7px 5px 0 0;
+  font-family: monospace;
 }
 
 .quote-title {
-  color: var(--first-color-second);
   font-size: 0.75rem;
   padding-bottom: 0.5rem;
 }
@@ -122,61 +176,57 @@ nav > a {
 .quote-description {
   font-size: 1rem;
   font-weight: 900;
+  text-align: center;
+  word-break: break-all;
+  padding: 1rem 0;
+}
+
+.quote-logo {
+  text-align: center;
+}
+
+.quote-logo img {
+  height: 50px;
+}
+
+.new-quote-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.new-quote-btn button {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.new-quote-btn button:hover {
+  background-color: #fff;
+  transition: var(--transition);
 }
 
 .quote-img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 20px;
+  width: 35%;
   border-radius: 50%;
 }
 
-/* =================== SWIPER ================== */
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.study-img {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+.study-img img {
+  width: 40%;
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
-/* .swiper {
-  height: 52rem;
-  padding: 2rem 0;
-  position: relative;
-} */
-
-/* .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 37rem;
-  height: 42rem;
-  position: relative;
-} */
-
-/* .slider-controller {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-} */
-
-/* .slider-controller .swiper-btn-next {
-  left: 58%;
-  transform: translateX(-58%);
-} */
 
 /* =================== BUTTONS ================== */
 .calculator-btn,
@@ -201,7 +251,7 @@ nav > a {
 
 .calculator-btn:hover {
   background-color: white;
-  color: var(--second-color);
+  color: var(--first-color);
   transition: var(--transition);
 }
 
