@@ -80,9 +80,7 @@ export default function Quote() {
           <button type="button" onClick={changeQuote}>New quote</button>
         </li>
       </ul>
-      <div className="study-img">
-        <img src={study} alt="study" />
-      </div>
+      <img src={study} alt="study" className="study-img" />
     </>
   );
 }
