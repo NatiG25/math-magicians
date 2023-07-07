@@ -1,25 +1,16 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
-import { EffectCoverflow, Pagination } from 'swiper';
+import React, { useState } from 'react';
 
 // Import images
-import cube from '../images/rubics.png';
-// import next from '../images/next.png';
-// import prev from '../images/prev.png';
 import albert from '../images/mathematicians/AlbertEinstein.jpeg';
+import quoteLogo from '../images/quote-logo.png';
+import study from '../images/study.jpeg';
 
 export default function Quote() {
+  const [quoteArrNum, setQuoteId] = useState(0);
   const quotes = [
     {
       id: 1,
-      img: 'https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSJKyrj1M_E4zNvs1V3mfNkv13MajxmmotwGgNlb639NJVMdPgVDHv29wgH_SnTO_Ep_SPNM6vm_yslNWc', // TODO fix the img src link
+      img: albert, // TODO fix the img src link
       description: `MATHEMATICS IS NOT ABOUT NUMBERS, EQUATIONS, COMPUTATIONS, OR
       ALGORITHMS: IT IS ABOUT UNDERSTANDING.`,
       mathematician: 'WILLIAM PAUL THURSTON',
@@ -35,7 +26,8 @@ export default function Quote() {
       id: 3,
       img: 'https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSJKyrj1M_E4zNvs1V3mfNkv13MajxmmotwGgNlb639NJVMdPgVDHv29wgH_SnTO_Ep_SPNM6vm_yslNWc',
       description:
-        'THERE ARE TWO WAYS TO DO GREAT MATHEMATICS. THE FIRST IS TO BE SMARTER THAN EVERYBODY ELSE. THE SECOND WAY IS TO BE STUPIDER THAN EVERYBODY ELSE BUT PERSISTENT.',
+        `THERE ARE TWO WAYS TO DO GREAT MATHEMATICS. THE FIRST IS TO BE SMARTER THAN EVERYBODY ELSE.
+        THE SECOND WAY IS TO BE STUPIDER THAN EVERYBODY ELSE BUT PERSISTENT.`,
       mathematician: 'RAOUL BOTT',
     },
     {
@@ -60,58 +52,37 @@ export default function Quote() {
       mathematician: 'CARL FRIEDRICH GAUSS',
     },
   ];
+
+  const changeQuote = () => {
+    setQuoteId(quoteArrNum < 5 ? quoteArrNum + 1 : 0);
+  };
+
   return (
     <>
-      <Swiper
-        effect="coverflow"
-        // cssMode={true}
-        grabCursor
-        centeredSlides
-        // loop
-        slidesPerView="auto"
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        // pagination={{ el: '.swiper-pagination', clickable: true }}
-        pagination
-        // navigation={{
-        //   nextEl: '.swiper-btn-next',
-        //   prevEl: '.swiper-btn-prev',
-        //   clickable: true,
-        // }}
-        modules={[EffectCoverflow, Pagination]}
-        className="swiper"
-      >
-        <ul className="quote-container">
-          {quotes.map((quote) => (
-            <SwiperSlide key={quote.id} className="swiper-slide">
-              <li className="quote-item">
-                <img
-                  src={quote.img}
-                  className="quote-img"
-                  alt="Mathematician"
-                />
-                <h3 className="quote-title">{quote.mathematician}</h3>
-                <p className="quote-description">{quote.description}</p>
-                <img src={cube} alt="cube" className="quote-img" />
-              </li>
-            </SwiperSlide>
-          ))}
-        </ul>
-        {/* <div className="slider-controller">
-          <div className="swiper-btn-prev slider-arrow">
-            <img src={prev} alt="prev btn" />
+      <ul className="quote-list">
+        <li key={quotes[quoteArrNum].id} className="quote-item">
+          <div className="quote-content">
+            <div className="quote-logo">
+              <img src={quoteLogo} alt="quote logo" />
+            </div>
+            <p className="quote-description">
+              “
+              {quotes[quoteArrNum].description}
+              ”
+            </p>
+            <div className="author">
+              <span>__</span>
+              <span>{quotes[quoteArrNum].mathematician}</span>
+            </div>
           </div>
-          <div className="swiper-pagination" />
-          <div className="swiper-btn-next slider-arrow">
-            <img src={next} alt="next btn" />
-          </div>
-        </div> */}
-      </Swiper>
+        </li>
+        <li className="new-quote-btn">
+          <button type="button" onClick={changeQuote}>New quote</button>
+        </li>
+      </ul>
+      <div className="study-img">
+        <img src={study} alt="study" />
+      </div>
     </>
   );
 }
