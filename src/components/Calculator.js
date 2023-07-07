@@ -10,7 +10,7 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="flex-container">
+      <div className="calculator-container">
         <h2>Let us do some maths!</h2>
         <div className="grid-container">
           <div className="span-1">

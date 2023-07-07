@@ -43,6 +43,8 @@
   margin: 0;
 }
 
+/* ========== Animations ========== */
+
 @keyframes transitionIn {
   from {
     opacity: 0;
@@ -55,9 +57,19 @@
   }
 }
 
-@keyframes slideInLeft {
+@keyframes slideBelow {
   0% {
     transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftIn {
+  0% {
+    transform: translateX(-100%);
   }
 
   100% {
@@ -79,6 +91,18 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.35rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -108,20 +132,31 @@ ul {
 
 .header {
   padding: 1rem 30px;
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--second-color);
   color: var(--first-color);
-  animation: 1s ease-out slideInLeft;
+  animation: 1s ease-out slideBelow;
+  transition: var(--transition);
 }
 
 nav > a {
-  padding: 20px;
-  color: var(--first-color);
+  margin: 20px 0;
+  padding: 0 20px;
   font-weight: bold;
   font-size: var(--h3-font-size);
+  color: inherit;
+}
+
+nav > a:hover {
+  color: #fff;
+}
+
+.nav-border {
+  border-left: 3px solid var(--first-color);
+  border-right: 3px solid var(--first-color);
 }
 
 .grid-container {
@@ -132,6 +167,42 @@ nav > a {
   padding: 1.5rem;
   border-radius: 2rem;
   text-align: center;
+}
+
+/* =================== HOME ================== */
+
+.home-content {
+  margin-top: 50px;
+  padding: 25px 180px;
+  animation: transitionIn 1s;
+}
+
+.home-title {
+  font-size: var(--big-font-size);
+  margin-bottom: 50px;
+}
+
+.home-description {
+  font-size: var(--h2-font-size);
+  padding: 10px 0;
+  width: 45%;
+}
+
+.home-img {
+  position: fixed;
+  width: 35%;
+  right: 5%;
+  bottom: 5%;
+  animation: slideLeftIn 0.5s ease-in-out 1;
+}
+
+.home-list {
+  margin: 25px 0 0 30px;
+}
+
+.home-item {
+  list-style: square;
+  font-size: var(--h3-font-size);
 }
 
 /* =================== QUOTES ================== */
@@ -174,7 +245,7 @@ nav > a {
 }
 
 .quote-description {
-  font-size: 1rem;
+  font-size: var(--normal-font-size);
   font-weight: 900;
   text-align: center;
   word-break: break-all;
@@ -203,7 +274,7 @@ nav > a {
   outline: none;
   border: none;
   font-weight: bold;
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   cursor: pointer;
   transition: var(--transition);
 }
@@ -213,19 +284,12 @@ nav > a {
   transition: var(--transition);
 }
 
-.quote-img {
-  width: 35%;
-  border-radius: 50%;
-}
-
 .study-img {
+  width: 15%;
   position: fixed;
   bottom: 2%;
   left: 2%;
-}
-
-.study-img img {
-  width: 40%;
+  animation: slideLeftIn 1s;
 }
 
 /* =================== BUTTONS ================== */
@@ -271,13 +335,14 @@ nav > a {
   background-color: white;
 }
 
-.flex-container {
+.calculator-container {
   display: flex;
   justify-content: space-around;
+  animation: transitionIn 1s;
 }
 
-.flex-container > h2 {
-  font-size: 30px;
+.calculator-container > h2 {
+  font-size: var(--h1-font-size);
 }
 
 .span-1 {
@@ -303,6 +368,46 @@ nav > a {
   text-align: center;
 }
 
-.home-content {
-  padding: 0 10px;
+@media screen and (max-width: 786px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ma-1);
+  }
+
+  .study-img {
+    width: 26%;
+  }
+
+  .home-content {
+    padding: 25px 35px;
+  }
+
+  .home-title,
+  .home-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-img {
+    width: 45%;
+  }
+
+  .calculator-container {
+    text-align: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .grid-container {
+    margin: 0 35px;
+  }
+
+  .quote-item {
+    padding: 0;
+  }
+
+  .quote-content {
+    width: 80%;
+  }
 }
