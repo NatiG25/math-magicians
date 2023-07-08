@@ -189,7 +189,7 @@ nav > a:hover {
 }
 
 .home-img {
-  position: fixed;
+  position: absolute;
   width: 35%;
   right: 5%;
   bottom: 5%;
@@ -285,7 +285,7 @@ nav > a:hover {
 
 .study-img {
   width: 15%;
-  position: fixed;
+  position: absolute;
   bottom: 2%;
   left: 2%;
   animation: slideLeftIn 1s;
@@ -379,13 +379,17 @@ nav > a:hover {
   }
 
   .home-content {
-    padding: 25px 35px;
+    padding: 35px 35px;
   }
 
   .home-title,
   .home-description {
     width: 100%;
     text-align: center;
+  }
+
+  .home-title {
+    font-size: var(--h1-font-size);
   }
 
   .home-img {
