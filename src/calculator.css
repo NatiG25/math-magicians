@@ -379,7 +379,7 @@ nav > a:hover {
   }
 
   .home-content {
-    padding: 35px 35px;
+    padding: 0 35px;
   }
 
   .home-title,
@@ -394,7 +394,7 @@ nav > a:hover {
 
   .home-img {
     width: 45%;
-    bottom: -4.5%;
+    bottom: -2.5%;
   }
 
   .calculator-container {
