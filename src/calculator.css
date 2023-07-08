@@ -248,7 +248,6 @@ nav > a:hover {
   font-size: var(--normal-font-size);
   font-weight: 900;
   text-align: center;
-  word-break: break-all;
   padding: 1rem 0;
 }
 
