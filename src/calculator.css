@@ -390,11 +390,11 @@ nav > a:hover {
 
   .home-title {
     font-size: var(--h1-font-size);
+    margin-bottom: 40px;
   }
 
   .home-img {
     width: 45%;
-    bottom: -2.5%;
   }
 
   .calculator-container {
