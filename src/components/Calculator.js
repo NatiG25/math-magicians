@@ -10,7 +10,7 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="flex-container">
+      <div className="calculator-container">
         <h2>Let us do some maths!</h2>
         <div className="grid-container">
           <div className="span-1">
@@ -19,13 +19,25 @@ const Calculator = () => {
             {obj.next}
           </div>
 
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn grey-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             AC
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn grey-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             +/-
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             %
           </button>
           <button
@@ -36,13 +48,25 @@ const Calculator = () => {
             ÷
           </button>
 
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             7
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             8
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             9
           </button>
           <button
@@ -53,13 +77,25 @@ const Calculator = () => {
             x
           </button>
 
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             4
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             5
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             6
           </button>
           <button
@@ -70,13 +106,25 @@ const Calculator = () => {
             -
           </button>
 
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             1
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             2
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             3
           </button>
           <button
@@ -87,15 +135,23 @@ const Calculator = () => {
             +
           </button>
 
-          <button type="button" className="span-2" onClick={calculationHandler}>
+          <button
+            type="button"
+            className="span-2 calculator-btn"
+            onClick={calculationHandler}
+          >
             0
           </button>
-          <button type="button" onClick={calculationHandler}>
+          <button
+            className="calculator-btn"
+            type="button"
+            onClick={calculationHandler}
+          >
             .
           </button>
           <button
             type="button"
-            className="operator"
+            className="operator equal-btn"
             onClick={calculationHandler}
           >
             =

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import About from './components/About';
+import Quote from './components/Quote';
 import Home from './components/Home';
 import Header from './components/Header';
 
@@ -16,7 +16,7 @@ class App extends React.Component {
       <>
         <Header />
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/quote" element={<Quote />} />
           <Route path="/Calculator" element={<Calculator />} />
           <Route path="/" element={<Home />} />
         </Routes>
