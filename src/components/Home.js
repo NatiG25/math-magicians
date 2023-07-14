@@ -6,16 +6,17 @@ export default function Home() {
     <>
       <main>
         <div className="home-content">
-          <h2 className="home-title">Welcome to our page!</h2>
+          <h2 className="home-title">Welcome to our online calculator!</h2>
           <p className="home-description">
-            &quot;Math Magicians&ldquo; is a website for all fans of mathematics.
+            Whether you are a student, business owner, or just someone who wants
+            to make quick calculations on the go, our calculator has got you covered.
           </p>
           <p className="home-description">
             It is a Single Page App (SPA) that allows users to:
           </p>
           <ul className="home-list">
             <li className="home-item">
-              Make simple calculations.
+              Perform basic arithmetic operations.
             </li>
             <li className="home-item">
               Read a random math-related quote.
