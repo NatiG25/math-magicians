@@ -7,7 +7,7 @@
  > - Make simple calculations.
  > - Read a random math-related quote.
 
-![MathMagic](https://github.com/NatiG25/math-magicians/assets/86069740/24130233-cde7-48cc-8964-b21abd1edb8d)
+![Screenshot from 2023-07-14 13-24-46](https://github.com/NatiG25/math-magicians/assets/86069740/e0630288-103d-4881-8b7c-23697013a0ba)
 
 ## Built With
 
