@@ -345,9 +345,7 @@ nav > a:hover {
 }
 
 .span-1 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  text-align: end;
   grid-column: 1 / -1;
   grid-row: span 2;
   color: white;
@@ -402,6 +400,10 @@ nav > a:hover {
     text-align: center;
     flex-direction: column;
     gap: 3rem;
+  }
+
+  .span-1 {
+    overflow: scroll;
   }
 
   .grid-container {
