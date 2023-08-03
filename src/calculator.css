@@ -94,6 +94,16 @@
   }
 }
 
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3rem;
@@ -244,7 +254,8 @@ nav > a:hover {
   padding-bottom: 0.5rem;
 }
 
-.quote-description {
+.quote-description,
+#loading {
   font-size: var(--normal-font-size);
   font-weight: 900;
   text-align: center;
@@ -281,6 +292,19 @@ nav > a:hover {
 .new-quote-btn button:hover {
   background-color: #fff;
   transition: var(--transition);
+}
+
+.hide-quote {
+  display: none;
+}
+
+#loading {
+  display: none;
+  animation: loading 1s infinite linear;
+}
+
+#loading.display {
+  display: block;
 }
 
 .study-img {
