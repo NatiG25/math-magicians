@@ -6,17 +6,23 @@ import study from '../images/study.jpeg';
 
 export default function Quote() {
   const [quoteArrNum, setQuoteId] = useState(0);
-  const [quoteApi, setQuoteApi] = useState();
+  const [quoteApi, setQuoteApi] = useState('');
+  const [authorApi, setAuthorApi] = useState('');
+
   const loader = document.querySelector('#loading');
-  const quoteDescription = document.querySelector('.quote-description');
+  const quoteContent = document.querySelector('.quote-content');
   const displayLoading = () => {
-    loader.classList.add('display');
-    quoteDescription.classList.add('hide-quote');
+    if (loader) {
+      loader.classList.add('display');
+      quoteContent.classList.add('hide-quote');
+    }
   };
 
   const hideLoading = () => {
-    quoteDescription.classList.remove('hide-quote');
-    loader.classList.remove('display');
+    if (loader) {
+      quoteContent.classList.remove('hide-quote');
+      loader.classList.remove('display');
+    }
   };
 
   const apiUrl = 'https://mathematics-quotes-api.onrender.com/api/v1/quotes';
@@ -26,10 +32,12 @@ export default function Quote() {
     try {
       const getQuote = await fetch(apiUrl);
       const res = await getQuote.json();
-      const { quote } = res[0];
+      const { quote, author } = res;
       hideLoading();
+      setAuthorApi(author.toUpperCase());
       return setQuoteApi(quote.toUpperCase());
     } catch (error) {
+      setAuthorApi(null);
       return setQuoteApi(null);
     }
   };
@@ -79,7 +87,7 @@ export default function Quote() {
   ];
 
   const changeQuote = () => {
-    if (quoteApi) fetchQuote();
+    if (quoteApi && authorApi) fetchQuote();
     else setQuoteId(quoteArrNum < 5 ? quoteArrNum + 1 : 0);
   };
 
@@ -87,19 +95,21 @@ export default function Quote() {
     <>
       <ul className="quote-list">
         <li key={quotes[quoteArrNum].id} className="quote-item">
-          <div className="quote-content">
+          <div className="quote-container">
             <div className="quote-logo">
               <img src={quoteLogo} alt="quote logo" />
             </div>
             <div id="loading">Loading...</div>
-            <p className="quote-description">
-              “
-              {quoteApi || quotes[quoteArrNum].description}
-              ”
-            </p>
-            <div className="author">
-              <span>__</span>
-              <span>{quotes[quoteArrNum].mathematician}</span>
+            <div className="quote-content">
+              <p className="quote-description">
+                “
+                {quoteApi || quotes[quoteArrNum].description}
+                ”
+              </p>
+              <div className="author">
+                <span>__</span>
+                <span>{authorApi || quotes[quoteArrNum].mathematician}</span>
+              </div>
             </div>
           </div>
         </li>

@@ -224,7 +224,7 @@ nav > a:hover {
   justify-content: space-evenly;
 }
 
-.quote-content {
+.quote-container {
   background-color: var(--second-color);
   padding: 1rem 30px;
   width: 50%;
@@ -232,7 +232,7 @@ nav > a:hover {
   transition: var(--transition);
 }
 
-.quote-content:hover {
+.quote-container:hover {
   background-color: #fff;
   transform: scale(1.25);
 }
@@ -438,7 +438,7 @@ nav > a:hover {
     padding: 0;
   }
 
-  .quote-content {
+  .quote-container {
     width: 80%;
   }
 }
